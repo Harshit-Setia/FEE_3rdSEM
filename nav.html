@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #nav{
+            background-color:hsl(0, 0%, 63%); 
+            width:100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #left{
+            text-align:left;
+            height: 100%;
+        }
+        #left a{
+            text-decoration: none;
+            color:hsl(20, 100%, 30%);
+            font-size:30px;
+            font-weight:bold;
+        }
+        #mid{
+            height: 100%;
+            padding-top: 26px;
+            max-width: 470px;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #mid a{
+            color:hsl(0, 0%, 35%); 
+            font-weight:bold; 
+            font-size:18px;
+        }
+        #mid a:hover{
+            font-size: 19px;
+            color: hsl(0, 0%, 40%);
+        }
+        #dropdown {
+            display:none !important;
+            text-align: end; 
+            overflow: hidden;
+            height: 300px;
+            padding-top: 12px;
+        }
+        #dropdown a{
+            display: block;
+            padding: 10px 15px;
+        }
+        #dropdown #content{
+            display: none;
+            max-width: 187px;
+            min-width: 150px;
+            margin-top: 12px;
+            background-color: hsl(0, 0%, 60%,.8);
+        }
+        #dropdown button:hover{
+            background-color: hsl(0, 0%, 50%);
+        }
+        #dropdown:hover #content{
+            display: block;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            #mid{
+                display: none !important;
+            }
+            #right{
+                display: none !important;
+            }
+            #dropdown{
+                display: inline-block !important;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="left">
+            <div>
+                <a href="index.html" style="display: flex;">
+                    MEAL<br>&nbsp;MATE
+                    <img src="images/Logo.png" height="60px">
+                </a>
+            </div>
+            
+        </div>
+        <div id="mid">
+            <a href="table.html" target="_top">Meal Plan</a> 
+            <a>BROWSE FOOD</a> 
+            <a>MORE DIETS</a>  
+        </div>
+        <div id="right" style="text-align: right; height: 100%; padding-top: 10px; padding-right: 5px;">
+            <a href="signup.html" target="_top" style="color:hsl(20, 100%, 30%); font-weight:bold; font-size:25px; ">SIGN UP</a><br> 
+            <a href="login.html" target="_top" style="font-size:10px; color:hsl(0, 0%, 35%); ">Already a member? sign in</a>
+        </div>
+        <div id="dropdown">
+            <button style="background: hsl(0, 0%, 63%); border: none;"><img src="images/menu_32dp_993300_FILL0_wght400_GRAD0_opsz40.svg" alt="Menu"></button>
+            <div id="content">
+                <a href="table.html" target="_top" style="color:hsl(0, 0%, 35%); font-weight:bold; font-size:20px;">BROWSE FOOD</a> 
+                <a style="color:hsl(0, 0%, 35%); font-weight:bold; font-size:20px;">MORE DIETS</a> 
+                <a style="color:hsl(20, 100%, 30%); font-weight:bold; font-size:25px;">SIGN UP</a> 
+                <a style="font-size:10px; color:hsl(0, 0%, 35%);">Already a member? sign in</a>
+            </div>
+        </div>
+    </div>
+</html>
