@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Mate</title>
+    <link rel="icon" href="images/Logo.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="overflow-x: hidden;" >
+    
+    <iframe src="nav.html"width="100%" height="320px" scrolling="no" style="position: fixed; border: none; z-index: 50;"></iframe>
+    <header>
+        <div >
+            <h1 id="head">OWN YOUR MEAL</h1>
+            <h1 id="mid">with</h1>
+            <h1 id="foot">MEAL<br>&nbsp;MATE!!</h1>
+        </div>
+    </header>
+    <section class="hero">
+        <div id="box1">
+            <h2>Your Meal Planning Partner</h2>
+            <p>Meal Mate is your go-to companion for personalized meal planning. Whether you're aiming for healthier eating, managing dietary preferences, or simply looking for meal inspiration, Meal Mate offers tailored recipes and easy-to-follow plans to suit your lifestyle.</p>
+        </div>
+    </section>
+    <section class="hero">
+        <div id="box2">
+
+                <h2>Create a balanced, nutritious and delicious weekly meal plan tailored to your dietary preferences</h2>
+                <form>
+                    <div>
+                        <label class="lab" for="pref">Preferences:</label><br>
+                        <select class="op" id="pref">
+                            <option>Vegan</option>
+                            <option>Gluten-free</option>
+                            <option>Dairy-free</option>
+                            <option>Other (please specify)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="lab">Number of meals per day:</label><br>
+                        <select class="op">
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div><br><br>
+                    <button>Generate <img src="images/gen.svg" alt=""></button>
+                </form>
+            </div>
+        </section>
+        <section class="hero" id="ser">
+            <h1>SERVINGS</h1>
+            <div class="meals">
+                <div class="meal">
+                    <p>BREAKFAST</p>
+                    <img src="images/breakfast.jpg" alt="Breakfast">
+                </div>
+                <div class="meal">
+                    <p>LUNCH</p>
+                    <img src="images/lunch.jpg" alt="Lunch">
+                </div>
+                <div class="meal">
+                    <p>DINNER</p>
+                    <img src="images/dinner.jpg" alt="Dinner">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="snack">
+                <h2>SNACKY<br>SNACK...</h2>
+                <p>FOR THOSE SMALL CRAVINGS...</p>
+                <button>FIND MORE</button>
+            </div>
+        </section>
+        <footer>
+            <button class="cta">Get started with a free account <img src="images/login.svg" alt=""></button>
+            <p>Need a hand?</p>
+        </footer>
+        <iframe src="footer.html" style="width: 100vw; overflow: hidden; height: 280px;"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
