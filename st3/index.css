@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Noto+Sans:wght@900&display=swap');
+
+:root{
+    font-size: 3vh;
+}
+@media screen and (max-width: 580px) {
+    :root{
+        font-size: 2.5vh;
+    }
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding-top: 28vh !important;
+    padding-bottom: 2vh !important;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 2%, 83%);
+    background-image: url("images/header.png");
+    background-repeat: no-repeat;
+    background-size: 75vh;
+    background-position:right bottom;
+}
+#box h1{
+    margin: 0 !important;
+    padding-left: 9vw;
+}
+#box #head{
+    font-size: 40px;
+    font-family:  "Lexend Deca", sans-seri;
+    color: aliceblue;
+}
+#box #mid{
+    font-size: 70px;
+    font-family: "Meow Script", cursive;
+    color: hsl(51, 100%, 41%);
+}
+#box #foot{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 90px;
+    color: hsl(0, 0%, 35%);
+    text-shadow: 4px 4px 0px gray;
+}
+.hero{
+    height: 70vh;
+    background-color: hsl(210, 2%, 83%);
+    padding-top: 10vh;
+}
+.hero #box1,#box2{
+    height: 50vh;
+    width: 80%;
+    background-color: hsl(0, 0%, 100%,.55);
+    margin: auto;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+}
+#box1 h2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.75rem;
+    color: hsl(0, 0%, 68%);
+    margin-bottom: 0 !important;
+}
+#box1 p{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    color: hsl(36, 44%, 75%);
+}
+#box2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+}
+#box2 h2{
+    text-align: left;
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 38%);
+}
+form{
+    justify-content: space-between;
+}
+form div{
+    display: inline-block; 
+    text-align: left;
+    margin-right: 40px !important;
+}
+form button{
+    font-size: 30px;
+    background-color: black;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.op{
+    width: 200px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.lab{
+    color: hsl(0, 0%, 50%);
+}
+.snack {
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: url("images/snack.png");
+    background-size: 75vh;
+    background-repeat: no-repeat;
+}
+@media  screen and (max-width: 670px){
+    .meals{
+        display: inline-block !important;
+        justify-content: center;
+    }
+    .meal{
+        rotate: 90deg;
+    }
+}
+.meals{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.meal{
+    display: flex;
+    
+}
+.meals img{
+    width: 30vw;
+    min-width: 200px;
+    max-width: 250px;
+}
+.meals p{
+    background-color: #fff;
+    color: black !important;
+    margin: 0 !important;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    writing-mode: vertical-rl;
+    min-height: 300px;
+    max-height: 378px;
+    height: 45.5vw !important;
+    rotate: 180deg;
+    letter-spacing: 7px !important;
+}
+.meal:hover{
+    cursor: pointer;
+}
+#ser{
+    text-align: center;
+    height: fit-content;
+    padding: 10px;
+}
+#ser h1{
+    font-size: 2.2rem;
+    color: hsl(0, 5%, 23%);
+    margin-bottom: 10px;
+}
+.snack{
+    padding-top: 15vh !important;
+    padding-bottom: 2vh !important;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(210, 2%, 83%);
+    background-image: url("images/snack.png");
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    height: fit-content ;
+    text-align: left;
+    padding-left: 30px;
+}
+.snack h2{
+    color: hsl(300, 1%, 38%);
+    font-size: 4rem;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 0 !important;
+    line-height: 70px;
+}
+.snack p{
+    font-size: 1.15rem;
+}
+.snack button{
+    background-color: black;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    background-color: hsl(210, 2%, 83%);
+    padding-top: 10vh !important;
+    padding-bottom: 10vh !important;
+
+}
+.cta{
+    background-color: black;
+    font-size: 30px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer p{
+    font-weight: 100;
+    color: hsl(0, 2%, 48%);
+}
