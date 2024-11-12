@@ -7,7 +7,7 @@
     <link rel="icon" href="images/Logo.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nav.css">
-    <!-- <script src="log.js"></script> -->
+    
 </head>
 <body style="overflow-x: hidden;" >
     
@@ -33,9 +33,9 @@
                     <div>
                         <label class="lab" for="pref">Preferences:</label><br>
                         <select class="op" id="pref">
-                            <option>Vegan</option>
-                            <option>Non-Vegetarian</option>
-                            <option>Vegetarian</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Non-Vegetarian">Non-Vegetarian</option>
+                            <option value="Vegetarian">Vegetarian</option>
                         </select>
                     </div>
                     <div>
@@ -45,7 +45,7 @@
                             <option>3</option>
                         </select>
                     </div><br><br>
-                    <button onclick="">Generate <img src="images/gen.svg" alt=""></button>
+                    <button onclick="h(event)">Generate <img src="images/gen.svg" alt=""></button>
                 </form>
             </div>
         </section>
@@ -82,9 +82,10 @@
         <s-foot></s-foot>
         <footer>
             <a href="signup.html" target="_top" class="cta">Get started with a free account <img src="images/login.svg" alt=""></a>
-            <p><a href="how.html">Need a hand?</a></p> 
+            <p><a href="how.html" style="color: black;">Need a hand?</a></p> 
         </footer>
         <iframe src="footer.html" style="width: 100vw; overflow-x: hidden; height: 334px;"></iframe>
+        <script src="table.js"></script>
     <script src="nav.js"></script>
 </body>
 </html>
