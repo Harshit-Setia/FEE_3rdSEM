@@ -25,21 +25,21 @@ header{
     background-size: 75vh;
     background-position:right bottom;
 }
-div h1{
+#box h1{
     margin: 0 !important;
     padding-left: 9vw;
 }
-div #head{
+#box #head{
     font-size: 40px;
     font-family:  "Lexend Deca", sans-seri;
     color: aliceblue;
 }
-div #mid{
+#box #mid{
     font-size: 70px;
     font-family: "Meow Script", cursive;
     color: hsl(51, 100%, 41%);
 }
-div #foot{
+#box #foot{
     font-family: "Noto Sans", sans-serif;
     font-size: 90px;
     color: hsl(0, 0%, 35%);
@@ -122,6 +122,8 @@ form button{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 .meal{
     display: flex;
@@ -134,6 +136,7 @@ form button{
 }
 .meals p{
     background-color: #fff;
+    color: black !important;
     margin: 0 !important;
     font-size: 25px;
     text-align: center;
@@ -201,6 +204,8 @@ footer{
     color: #fff;
     padding: 5px;
     border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
 }
 footer p{
     font-weight: 100;
