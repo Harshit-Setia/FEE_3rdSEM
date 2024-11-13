@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Pricing Plans</title>
+<style>
+    /* General styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        padding: 20px;
+    }
+
+    .plan {
+        background: #fff;
+        padding: 30px 20px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plan:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .plan.featured {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .plan h3 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .price {
+        font-size: 1.8em;
+        color: #e74c3c;
+        margin: 10px 0;
+    }
+
+    .price span {
+        font-size: 0.6em;
+    }
+
+    .features {
+        margin: 15px 0;
+        padding: 0;
+    }
+
+    .features li {
+        list-style: none;
+        margin: 8px 0;
+    }
+
+    /* New button styling */
+    .button {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        padding: 12px;
+        text-align: center;
+        background-color: #e74c3c;
+        color: #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        border: 2px solid #e74c3c;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #d62c1a;
+        border-color: #d62c1a;
+    }
+
+    /* Featured plan button styling */
+    .plan.featured .button {
+        background-color: #ff7f50;
+        border-color: #ff7f50;
+    }
+
+    .plan.featured .button:hover {
+        background-color: #ff6347;
+        border-color: #ff6347;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+        .plan {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .plan {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .price {
+            font-size: 1.5em;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h2>Choose Your Plan</h2>
+
+<div class="container">
+    <!-- Control Plan -->
+    <div class="plan">
+        <h3>Control</h3>
+        <p class="price">$59.00 <span>USD /mo</span></p>
+        <small>billed monthly</small>
+        <ul class="features">
+            <li>Manage up to 10 clients</li>
+            <li>Custom branded emails </li>
+            <li>Fully customize each client’s settings</li>
+            <li>Create collections of recipes and specify meals</li>
+        </ul>
+        <a href="#" class="button">Start The 14 Day Free Trial</a>
+    </div>
+
+    <!-- Collaborate Plan (Featured) -->
+    <div class="plan featured">
+        <h3>Collaborate</h3>
+        <p class="price">$69.00 <span>USD /mo</span></p>
+        <small>billed monthly</small>
+        <ul class="features">
+            <li>Everything in Control, plus...</li>
+            <li>Clients can log in to app and website</li>
+            <li>Clients can use ETM as a tracker</li>
+            <li>Your branding is displayed on web and app</li>
+            <li>Custom access permissions for each client</li>
+        </ul>
+        <a href="#" class="button">Start The 14 Day Free Trial</a>
+    </div>
+
+    <!-- Club Plan -->
+    <div class="plan">
+        <h3>Club</h3>
+        <p class="price">Custom</p>
+        <small>Managing over 5 clients?</small>
+        <p>Contact us for a custom quote.</p>
+        <a href="#" class="button">Contact Us</a>
+    </div>
+</div>
+
+</body>
+</html>

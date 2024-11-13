@@ -6,12 +6,14 @@
     <title>Meal Mate</title>
     <link rel="icon" href="images/Logo.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    
 </head>
 <body style="overflow-x: hidden;" >
     
-    <iframe src="nav.html"width="100%" height="320px" scrolling="no" style="position: fixed; border: none; z-index: 50;"></iframe>
+    <s-head></s-head>
     <header>
-        <div >
+        <div id="box">
             <h1 id="head">OWN YOUR MEAL</h1>
             <h1 id="mid">with</h1>
             <h1 id="foot">MEAL<br>&nbsp;MATE!!</h1>
@@ -31,38 +33,43 @@
                     <div>
                         <label class="lab" for="pref">Preferences:</label><br>
                         <select class="op" id="pref">
-                            <option>Vegan</option>
-                            <option>Gluten-free</option>
-                            <option>Dairy-free</option>
-                            <option>Other (please specify)</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Non-Vegetarian">Non-Vegetarian</option>
+                            <option value="Vegetarian">Vegetarian</option>
                         </select>
                     </div>
                     <div>
                         <label class="lab">Number of meals per day:</label><br>
                         <select class="op">
-                            <option>3</option>
                             <option>4</option>
+                            <!-- <option>3</option> -->
                         </select>
                     </div><br><br>
-                    <button>Generate <img src="images/gen.svg" alt=""></button>
+                    <button onclick="h(event)" style="cursor: pointer;">Generate <img src="images/gen.svg" alt=""></button>
                 </form>
             </div>
         </section>
         <section class="hero" id="ser">
             <h1>SERVINGS</h1>
             <div class="meals">
+                <a href="breakfast.html">
                 <div class="meal">
                     <p>BREAKFAST</p>
                     <img src="images/breakfast.jpg" alt="Breakfast">
                 </div>
+            </a>
+            <a href="lunch.html">
                 <div class="meal">
                     <p>LUNCH</p>
                     <img src="images/lunch.jpg" alt="Lunch">
                 </div>
+            </a>
+            <a href="dinner.html">
                 <div class="meal">
                     <p>DINNER</p>
                     <img src="images/dinner.jpg" alt="Dinner">
                 </div>
+            </a>
             </div>
         </section>
         <section>
@@ -72,11 +79,13 @@
                 <button>FIND MORE</button>
             </div>
         </section>
+        <s-foot></s-foot>
         <footer>
-            <button class="cta">Get started with a free account <img src="images/login.svg" alt=""></button>
-            <p>Need a hand?</p>
+            <a href="signup.html" target="_top" class="cta">Get started with a free account <img src="images/login.svg" alt=""></a>
+            <p><a href="how.html" style="color: black;">Need a hand?</a></p> 
         </footer>
-        <iframe src="footer.html" style="width: 100vw; overflow: hidden; height: 280px;"></iframe>
-    <script src="script.js"></script>
+        <iframe src="footer.html" style="width: 100vw; overflow-x: hidden; height: 334px;"></iframe>
+        <script src="table.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
